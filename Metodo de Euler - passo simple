@@ -1,0 +1,26 @@
+%Metodo de Euler Passo Unico
+
+% y1 = y0 + h. f'(x0,y0)
+
+%%
+
+clear all
+clc
+
+disp('Metodo de Euler Passo Unico')
+
+
+%Colocar o respectivo valor de x0 e y0
+x = input('Digite o valor de x: ');
+y = input('Digite o valor inicial y: ');
+h = input('Digite o valor do incremento h: ');
+
+%Adicionar a função na variavel de entrada
+entrada = input('Digite a função diferencial em termos de x e y - f(x,y): ');
+
+
+saida = y + h*entrada ;
+
+%mostrar valor final em referencia a y1 como a função saida
+fprintf('valor de y1: %f',saida)
+
